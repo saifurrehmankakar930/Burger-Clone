@@ -1,0 +1,27 @@
+{
+  "name": "burger-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saifurrehmankakar930/Burger-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saifurrehmankakar930/Burger-Clone/issues"
+  },
+  "homepage": "https://github.com/saifurrehmankakar930/Burger-Clone#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "daisyui": "^5.1.29"
+  }
+}
