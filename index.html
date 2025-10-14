@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- <body class="font-inter"> -->
+  <!-- //--** Header-start **--// -->
+ <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        .chewy-font {
+            font-family: 'Chewy', cursive;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- navbar-start -->
+    <navbar>
+        <div class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="menu-icon cursor-pointer flex flex-col space-y-1" onclick="toggleMenu()">
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                </div>
+                
+                <select id="menu-options" class="hidden ml-2 p-1 border border-gray-300 rounded">
+                    <option>Home</option>
+                    <option>About</option>
+                    <option>Contact</option>
+                </select>
+            </div>
+            <div>
+                <h2 class="chewy-font text-2xl text-orange-500">BURGER KING</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                
+                <div class="nav-but">
+                    <button class="flex items-center text-gray-500">
+                        <i class="fa-solid fa-bag-shopping mr-2 text-gray-500"></i>View Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <!-- navbar-end -->
+    
+    <!-- container-start -->
+    <main>
+        <div class="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 bg-orange-50">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <h1 class="chewy-font text-3xl md:text-4xl mb-4">Fire up your <br>BK® order!</h1>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-bag-shopping mr-2"></i><b>Order Pickup</b>
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 py-2 px-4 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-truck mr-2"></i><b>Order Delivery</b>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="w-full rounded-lg" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/23ade834ac1dfb5adc195c6f977540dcb2dcc1ca-2100x1050.png?w=900&q=75&fit=max&auto=format" alt="Burger King Promotion">
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/5307fcecf8985c350677b2721122facddbf949c8-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/c99ac4aa94395ec0059f84f13dd76f7fbd7fa5cc-800x400.jpg?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/8e30e6f61ee4dd5f755952982bfad7b430ab91e1-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/7a0d419d806d5fc03abbebc26d1599d336556f12-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/6fd80633bf404b340cf41f34766a997fa678fff7-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4aeceeff6ec6f2e04fd26728d67ddbd3fab9b58e-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="h-24"></div>
+        
+        <div class="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 bg-orange-50">
+            <div class="md:w-1/2 mb-6 md:mb-0 relative">
+                <img id="m-img-1" class="w-3/4 mx-auto md:w-full md:max-w-md" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/fce87173f33b83388e766172fb1c471023582c4e-852x1183.png?w=550&q=75&fit=max&auto=format" alt="Burger King App">
+                <img id="m-img-2" class="absolute bottom-0 right-0 w-1/2 md:w-2/5" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=900&q=75&fit=max&auto=format" alt="Phone">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="chewy-font text-3xl md:text-4xl mb-4"><b>Save $$$ With offers on demand</b></h1>
+                <div class="flex justify-center md:justify-start gap-4 mb-4">
+                    <img class="h-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMXXrbE56wocfz3A_sPV4okAAVA-7rg91erk6DCEZ9aJKFBLiTVblSSZr5EiVj6ohyg&usqp=CAU" alt="App Store">
+                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
+                </div>
+                <p class="text-sm text-gray-600">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.</p>
+            </div>
+        </div>
+        
+        <div class="bg-[#502314] text-white text-center py-4 px-4">
+<p class="text-sm">TM & Copyright 2025 Saif Ur Rehman Kakar</p>        </div>
+        
+        <div class="flex justify-around items-center border-t border-gray-300 py-4 bg-white">
+            <div>
+                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
+                    <i class="fa-solid fa-house mr-2"></i><a href="./index.html">Home</a>
+                </button>
+                <div id="menu-home" class="hidden mt-2">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                </div>
+            </div>
+            <div>
+                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
+                    <i class="fas fa-bars mr-2"></i><a href="./menu.html">Menu</a>
+                </button>
+                <div id="menu-menu" class="hidden mt-2">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                </div>
+            </div>
+            <div>
+                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
+                    <i class="fas fa-hamburger mr-2"></i><a href="./offer.html">Offer</a>
+                </button>
+                <div id="menu-offer" class="hidden mt-2">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                </div>
+            </div>
+            <div>
+                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
+                    <i class="fa-solid fa-crown mr-2"></i><a href="./rewards.css">Rewards</a>
+                </button>
+                <div id="menu-rewards" class="hidden mt-2">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- container-end -->
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-options');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+        
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
