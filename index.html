@@ -6,8 +6,7 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- <body class="font-inter"> -->
-  <!-- //--** Header-start **--// -->
+
  <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
@@ -18,196 +17,219 @@
         }
     </style>
 </head>
-<body class="bg-white">
-    <!-- navbar-start -->
-    <navbar>
-        <div class="flex justify-between items-center p-4 border-b border-gray-200">
-            <div class="flex items-center">
-                <div class="menu-icon cursor-pointer flex flex-col space-y-1" onclick="toggleMenu()">
-                    <span class="w-6 h-0.5 bg-gray-600"></span>
-                    <span class="w-6 h-0.5 bg-gray-600"></span>
-                    <span class="w-6 h-0.5 bg-gray-600"></span>
-                </div>
-                
-                <select id="menu-options" class="hidden ml-2 p-1 border border-gray-300 rounded">
-                    <option>Home</option>
-                    <option>About</option>
-                    <option>Contact</option>
-                </select>
-            </div>
-            <div>
-                <h2 class="chewy-font text-2xl text-orange-500">BURGER KING</h2>
-            </div>
-            <div class="flex items-center gap-4">
-                
-                <div class="nav-but">
-                    <button class="flex items-center text-gray-500">
-                        <i class="fa-solid fa-bag-shopping mr-2 text-gray-500"></i>View Cart
-                    </button>
-                </div>
-            </div>
+ <body class="bg-white font-[Chewy]">
+  <!-- Navbar Start -->
+  <nav class="flex justify-between items-center p-4 border-b border-gray-200">
+    <div class="flex items-center">
+      <!-- Mobile Menu Button -->
+      <div class="group relative">
+        <button class="flex flex-col space-y-1 cursor-pointer">
+          <span class="w-6 h-0.5 bg-gray-600"></span>
+          <span class="w-6 h-0.5 bg-gray-600"></span>
+          <span class="w-6 h-0.5 bg-gray-600"></span>
+        </button>
+        <!-- Dropdown Menu -->
+        <div class="absolute left-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact</a>
         </div>
-    </navbar>
-    <!-- navbar-end -->
+      </div>
+    </div>
     
-    <!-- container-start -->
-    <main>
-        <div class="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 bg-orange-50">
-            <div class="md:w-1/2 mb-6 md:mb-0">
-                <h1 class="chewy-font text-3xl md:text-4xl mb-4">Fire up your <br>BK® order!</h1>
-                <div class="flex flex-col md:flex-row gap-4">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-bag-shopping mr-2"></i><b>Order Pickup</b>
-                    </button>
-                    <button class="border border-gray-300 text-gray-700 py-2 px-4 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-truck mr-2"></i><b>Order Delivery</b>
-                    </button>
-                </div>
-            </div>
-            <div class="md:w-1/2">
-                <img class="w-full rounded-lg" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/23ade834ac1dfb5adc195c6f977540dcb2dcc1ca-2100x1050.png?w=900&q=75&fit=max&auto=format" alt="Burger King Promotion">
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/5307fcecf8985c350677b2721122facddbf949c8-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/c99ac4aa94395ec0059f84f13dd76f7fbd7fa5cc-800x400.jpg?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/8e30e6f61ee4dd5f755952982bfad7b430ab91e1-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/7a0d419d806d5fc03abbebc26d1599d336556f12-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/6fd80633bf404b340cf41f34766a997fa678fff7-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4aeceeff6ec6f2e04fd26728d67ddbd3fab9b58e-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
-                    <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full">Order Now</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="h-24"></div>
-        
-        <div class="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 bg-orange-50">
-            <div class="md:w-1/2 mb-6 md:mb-0 relative">
-                <img id="m-img-1" class="w-3/4 mx-auto md:w-full md:max-w-md" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/fce87173f33b83388e766172fb1c471023582c4e-852x1183.png?w=550&q=75&fit=max&auto=format" alt="Burger King App">
-                <img id="m-img-2" class="absolute bottom-0 right-0 w-1/2 md:w-2/5" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=900&q=75&fit=max&auto=format" alt="Phone">
-            </div>
-            <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="chewy-font text-3xl md:text-4xl mb-4"><b>Save $$$ With offers on demand</b></h1>
-                <div class="flex justify-center md:justify-start gap-4 mb-4">
-                    <img class="h-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMXXrbE56wocfz3A_sPV4okAAVA-7rg91erk6DCEZ9aJKFBLiTVblSSZr5EiVj6ohyg&usqp=CAU" alt="App Store">
-                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
-                </div>
-                <p class="text-sm text-gray-600">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.</p>
-            </div>
-        </div>
-        
-        <div class="bg-[#502314] text-white text-center py-4 px-4">
-<p class="text-sm">TM & Copyright 2025 Saif Ur Rehman Kakar</p>        </div>
-        
-        <div class="flex justify-around items-center border-t border-gray-300 py-4 bg-white">
-            <div>
-                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
-                    <i class="fa-solid fa-house mr-2"></i><a href="./index.html">Home</a>
-                </button>
-                <div id="menu-home" class="hidden mt-2">
-                    <p>Menu item 1</p>
-                    <p>Menu item 2</p>
-                </div>
-            </div>
-            <div>
-                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
-                    <i class="fas fa-bars mr-2"></i><a href="./menu.html">Menu</a>
-                </button>
-                <div id="menu-menu" class="hidden mt-2">
-                    <p>Menu item 1</p>
-                    <p>Menu item 2</p>
-                </div>
-            </div>
-            <div>
-                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
-                    <i class="fas fa-hamburger mr-2"></i><a href="./offer.html">Offer</a>
-                </button>
-                <div id="menu-offer" class="hidden mt-2">
-                    <p>Menu item 1</p>
-                    <p>Menu item 2</p>
-                </div>
-            </div>
-            <div>
-                <button class="flex items-center border-none bg-transparent" onclick="toggleMenu()">
-                    <i class="fa-solid fa-crown mr-2"></i><a href="./rewards.css">Rewards</a>
-                </button>
-                <div id="menu-rewards" class="hidden mt-2">
-                    <p>Menu item 1</p>
-                    <p>Menu item 2</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- container-end -->
+    <div>
+      <h2 class="font-chewy text-2xl text-orange-500">BURGER KING</h2>
+    </div>
     
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu-options');
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-            }
-        }
+    <div class="flex items-center gap-4">
+      <div class="nav-but">
+        <button class="flex items-center text-gray-500">
+          <i class="fa-solid fa-bag-shopping mr-2 text-gray-500"></i>View Cart
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  
+  <!-- Container Start -->
+  <main>
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 bg-orange-50">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <h1 class="font-chewy text-3xl md:text-4xl mb-4">Fire up your <br>BK® order!</h1>
+        <div class="flex flex-col md:flex-row gap-4">
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-bag-shopping mr-2"></i><b>Order Pickup</b>
+          </button>
+          <button class="border border-gray-300 text-gray-700 py-2 px-4 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-truck mr-2"></i><b>Order Delivery</b>
+          </button>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img class="w-full rounded-lg" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/23ade834ac1dfb5adc195c6f977540dcb2dcc1ca-2100x1050.png?w=900&q=75&fit=max&auto=format" alt="Burger King Promotion">
+      </div>
+    </div>
+    
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/5307fcecf8985c350677b2721122facddbf949c8-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">1 Hamburger = 125 Crowns!</h2>
+          <p class="text-gray-600 mb-4">Celebrate National Hamburger Month with a Hamburger for 125 Crowns instead of the usual 250—all month long! Only for Royal Perks members! See Terms.</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/c99ac4aa94395ec0059f84f13dd76f7fbd7fa5cc-800x400.jpg?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">Whopper Wednesday Deal!</h2>
+          <p class="text-gray-600 mb-4">Get a Whopper for just $5 every Wednesday! This limited-time offer is perfect for satisfying your burger cravings. Available for pickup or delivery.</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/8e30e6f61ee4dd5f755952982bfad7b430ab91e1-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">Free Fries Friday!</h2>
+          <p class="text-gray-600 mb-4">Enjoy a free medium fries with any purchase every Friday! Download the BK app to redeem this exclusive offer. Limited time only.</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/7a0d419d806d5fc03abbebc26d1599d336556f12-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">2 for $6 Chicken Sandwiches</h2>
+          <p class="text-gray-600 mb-4">Get two crispy chicken sandwiches for just $6! Perfect for sharing or saving one for later. Available all day, every day.</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/6fd80633bf404b340cf41f34766a997fa678fff7-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">Breakfast Deal: Croissan'wich Combo</h2>
+          <p class="text-gray-600 mb-4">Start your day right with a Croissan'wich combo including hash browns and a small coffee for just $4.99. Available until 10:30 AM.</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4aeceeff6ec6f2e04fd26728d67ddbd3fab9b58e-2000x1000.png?w=650&q=75&fit=max&auto=format" alt="Burger Promotion">
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">Family Bundle Special</h2>
+          <p class="text-gray-600 mb-4">Feed the whole family with our special bundle: 4 Whoppers, 4 medium fries, and 4 drinks for just $25. Perfect for family night!</p>
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-full w-full hover:bg-orange-600 transition-colors duration-300">Order Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="h-24"></div>
+    
+    
+    <div class="flex flex-col md:flex-row bg-gray-100 h-auto md:h-[434px]">
+      <div class="flex-1 flex flex-col items-center justify-center text-center p-4">
+        <img
+          class="w-40 h-56 mt-5 block md:hidden"
+          src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/fce87173f33b83388e766172fb1c471023582c4e-852x1183.png?w=550&q=75&fit=max&auto=format"
+          alt="Mobile App"
+        />
         
-        function toggleMenu(id) {
-            const menu = document.getElementById(id);
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-            }
-        }
-    </script>
+        <img
+          class="hidden md:block w-[436px] h-[380px]"
+          src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=900&q=75&fit=max&auto=format"
+          alt="Offer Image"
+        />
+      </div>
 
+      <div class="flex-[1.3] flex flex-col justify-center p-5 md:p-10">
+        <h1 class="text-[32px] md:text-[52px] font-bold mb-4 text-center md:text-left">
+          Save $$$ With offers on demand
+        </h1>
 
+        <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-3">
+          <img
+            class="w-48 h-14"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMXXrbE56wocfz3A_sPV4okAAVA-7rg91erk6DCEZ9aJKFBLiTVblSSZr5EiVj6ohyg&usqp=CAU"
+            alt="App Store"
+          />
+          <img
+            class="w-48 h-14"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
+            alt="Google Play"
+          />
+        </div>
 
-
+        <p class="text-xs text-gray-600 text-center md:text-left leading-tight">
+          Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.
+          App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="bg-[#502314] text-white text-center py-4 px-4">
+      <p class="text-sm">TM & Copyright 2025 Saif Ur Rehman Kakar</p>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="flex justify-around items-center border-t border-gray-300 py-4 bg-white">
+      
+      <div class="group relative">
+        <button class="flex items-center border-none bg-transparent">
+          <i class="fa-solid fa-house mr-2"></i>Home
+        </button>
+        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home Page</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Locations</a>
+        </div>
+      </div>
+      
+      <!-- Menu Dropdown -->
+      <div class="group relative">
+        <button class="flex items-center border-none bg-transparent">
+          <i class="fas fa-bars mr-2"></i>Menu
+        </button>
+        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Burgers</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Chicken</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sides</a>
+        </div>
+      </div>
+      
+      
+      <div class="group relative">
+        <button class="flex items-center border-none bg-transparent">
+          <i class="fas fa-hamburger mr-2"></i>Offers
+        </button>
+        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Daily Deals</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Coupons</a>
+        </div>
+      </div>
+      
+      
+      <div class="group relative">
+        <button class="flex items-center border-none bg-transparent">
+          <i class="fa-solid fa-crown mr-2"></i>Rewards
+        </button>
+        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Join Now</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">My Rewards</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Container End -->
 </body>
 </html>
